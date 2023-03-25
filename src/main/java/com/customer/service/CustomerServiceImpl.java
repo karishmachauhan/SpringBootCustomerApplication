@@ -56,7 +56,7 @@ public class CustomerServiceImpl implements CustomerService{
         }
         /* It is possible to check for duplicate email and phone number separately and 
          * throw even more customized exception but in real scenarios 
-        in order to avoid security issues it is recommended to keep it as abstract as possible
+           in order to avoid security issues it is recommended to keep it as abstract as possible
         */
         if (isEmailOrCellNumberAlreadyUsed(customer)) {
         	throw new CustomerCustomException(HttpStatus.BAD_REQUEST, "Email or phone number already exists");
@@ -68,8 +68,11 @@ public class CustomerServiceImpl implements CustomerService{
 	@Override
     public void deleteCustomer(String id) {
         Customer customer = customers.remove(id);
+        /* Since error handling returns string message only and requirement is to send false
+           with error message I added false in the string
+        */
         if (customer == null) {
-            throw new CustomerCustomException(HttpStatus.NOT_FOUND, "Customer not found");
+            throw new CustomerCustomException(HttpStatus.NOT_FOUND, "false: Customer not found");
         }
     }
 

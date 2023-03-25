@@ -56,9 +56,9 @@ public class CustomerController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteCustomer(@PathVariable String id) {
+    public ResponseEntity<Boolean> deleteCustomer(@PathVariable String id) {
         customerService.deleteCustomer(id);
-        return ResponseEntity.ok("Customer with ID " + id + " deleted successfully");
+        return ResponseEntity.ok(true);
     }
     
     @ExceptionHandler({CustomerCustomException.class})
