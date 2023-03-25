@@ -37,7 +37,7 @@ Clone the repository and follow the following steps:
 ![image](https://user-images.githubusercontent.com/15381660/227743408-1daa3fb3-178a-4396-8d7a-52f09a03ffc8.png)
 
 5. After Project is imported click on Update Project as below and this should add dependencies that are required for the application.
-<img width="1022" alt="image" src="https://user-images.githubusercontent.com/15381660/227743493-709b7fa6-6377-47e8-94fd-674ece39946b.png">
+<img width="500" height="300" alt="image" src="https://user-images.githubusercontent.com/15381660/227743493-709b7fa6-6377-47e8-94fd-674ece39946b.png">
 
 ![image](https://user-images.githubusercontent.com/15381660/227743408-1daa3fb3-178a-4396-8d7a-52f09a03ffc8.png)
 
