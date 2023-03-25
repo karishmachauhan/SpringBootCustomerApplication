@@ -2,7 +2,7 @@
 
 This Application handles basic CRUD operations in Java using springboot. I've used in memory Map for this implementation.
 
-Following are the endpoints that are implemented in this application:
+Following are the endpoints that are implemented:
 
 GET /customers - return a list of customer objects in the response body.
 
